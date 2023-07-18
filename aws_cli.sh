@@ -1,6 +1,6 @@
 # For all JSON files
 
-aws s3 cp . s3://yt-analysis-on-apsouth1-dev/youtube/raw_statistics_reference_data/ --recursive -- exclude "*" --include "*.json"
+aws s3 cp . s3://yt-analysis-on-apsouth1-dev/youtube/raw_statistics_reference_data/ --recursive --exclude "*" --include "*.json"
 
 # For all CSV files
 aws s3 cp CAvideos.csv s3://yt-analysis-on-apsouth1-dev/youtube/raw_statistics/region=ca/
